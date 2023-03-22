@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Practice 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #3A0CA3;
+            color: #ECEBF3;
+        }
+
+        #theFather {
+            margin-left: 5vh;
+            margin-right: 5vh;
+        }
+
+        h1 {
+            margin-bottom: 5vw;
+        }
+
+        fieldset {
+            background-color: #ECEBF3;
+            border: none;
+            color: #3A0CA3;
+            padding: 2vw;
+            font-size: 1.5vw;
+            margin-top: 2vw;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: .5vh;
+        }
+
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="theFather">
+        <form id="form">
+            <fieldset>
+                <fieldset>
+                    <h1>Form</h1>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <br>
+                    <span id="nameSpan"></span>
+                </fieldset>
+                <fieldset>
+                    <label for="eml">Email: </label>
+                    <input type="text" id="eml" placeholder="Email@email.com" required>
+                    <br>
+                    <span id="emlSpan"></span>
+                </fieldset>
+                <fieldset>
+                    <label for="msg">Message: </label>
+                    <input type="text" id="msg" placeholder="Message" required>
+                    <br>
+                    <span id="msgSpan"></span>
+                </fieldset>
+                <input type="submit" id="submitButton">
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
